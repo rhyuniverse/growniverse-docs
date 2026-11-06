@@ -1,6 +1,6 @@
 # Growniverse Lua API
 
-Scripts are Lua 5.4 files in `Android/media/<package>/Scripts/` (e.g. `/sdcard/Android/media/com.growniverse.rhyuniverse/Scripts/`). Manage them from the **Scripts** tab: the left list shows your `.lua` files (and **+ New script**); the right side is a code editor with a toolbar (Run / Stop, Stop all, Delete), quick keys and a status bar. Edits are saved automatically. Nothing runs on its own; a script only runs after you tap Run. Over adb you can also push files straight into that folder.
+Scripts are Lua 5.4 files in `Android/media/<package>/Scripts/` (e.g. `/sdcard/Android/media/com.growniverse.rhyuniverse/Scripts/`). Manage them from the **Scripts** tab: the left list shows your `.lua` files (with **+ New script** at the top); the right side is a code editor with a toolbar (Run, Stop, Delete), quick keys and a status bar. Edits are saved automatically. Nothing runs on its own; a script only runs after you tap Run. Over adb you can also push files straight into that folder.
 
 All functions are flat globals (`getLocal()`, not `growtopia.getLocal()`). There is no script-facing UI API.
 
@@ -207,7 +207,7 @@ Given to `onVariant`. Argument *n* of the call is `v<n>`, so `v1` is the functio
 
 ## 10. Not available
 
-These exist in Growlauncher but not here: `runThread`, `getNPCList`, `fetch`, `writeToLocal`, `createPlayer`, `Preferences`, `UserInterface` and every other UI function, ImGui, coroutines, shortcuts.
+Not available: `runThread`, `getNPCList`, `fetch`, `writeToLocal`, `createPlayer`, `Preferences`, `UserInterface` and every other UI function, ImGui, coroutines, shortcuts.
 
 ## 11. Example scripts
 
